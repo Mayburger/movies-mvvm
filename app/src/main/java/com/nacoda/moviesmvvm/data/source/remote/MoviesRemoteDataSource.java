@@ -110,9 +110,7 @@ public class MoviesRemoteDataSource implements MoviesDataSource {
     @Override
     public void getCasts(@NotNull GetCastsCallback callback, @NotNull String movieId) {
         mApiService.getCasts
-                (
-                        API_KEY,
-                        movieId)
+                (movieId, API_KEY)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(results -> {

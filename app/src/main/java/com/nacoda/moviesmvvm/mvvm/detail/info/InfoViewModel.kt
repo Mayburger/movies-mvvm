@@ -3,20 +3,11 @@ package com.nacoda.moviesmvvm.mvvm.detail.info
 import android.annotation.SuppressLint
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
-import android.databinding.ObservableArrayList
 import android.databinding.ObservableField
-import android.databinding.ObservableList
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.view.View
-import android.widget.Toast
-import com.nacoda.moviesmvvm.data.model.Casts
 import com.nacoda.moviesmvvm.data.model.Detail
 import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.data.source.MoviesDataSource
 import com.nacoda.moviesmvvm.data.source.MoviesRepository
-import com.nacoda.moviesmvvm.mvvm.detail.casts.CastsAdapter
-import id.gits.jasaraharja.util.SingleLiveEvent
 
 /**
  * Created by irfanirawansukirman on 04/12/17.

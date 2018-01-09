@@ -8,7 +8,6 @@ import android.databinding.ObservableList
 import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.data.source.MoviesDataSource
 import com.nacoda.moviesmvvm.data.source.MoviesRepository
-import id.gits.jasaraharja.util.SingleLiveEvent
 
 /**
  * Created by irfanirawansukirman on 04/12/17.
