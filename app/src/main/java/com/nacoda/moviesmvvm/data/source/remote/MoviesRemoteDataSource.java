@@ -1,19 +1,15 @@
 package com.nacoda.moviesmvvm.data.source.remote;
 
-import com.nacoda.moviesmvvm.base.BaseApiModel;
-import com.nacoda.moviesmvvm.data.model.Movie;
 import com.nacoda.moviesmvvm.data.source.MoviesDataSource;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.nacoda.moviesmvvm.util.helper.Network.API_KEY;
-import static com.nacoda.moviesmvvm.util.helper.Network.LANGUAGE_ENGLISH;
+import static com.nacoda.moviesmvvm.util.helper.Statics.API_KEY;
+import static com.nacoda.moviesmvvm.util.helper.Statics.LANGUAGE_ENGLISH;
+
 
 /**
  * Created by Mayburger on 1/9/18.

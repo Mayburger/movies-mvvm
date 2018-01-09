@@ -13,52 +13,21 @@ import kotlinx.android.synthetic.main.popular_fragment.*
 class PopularFragment : BaseFragment() {
 
     private lateinit var mViewDataBinding: PopularFragmentBinding
-    private lateinit var mAdapter: PopularAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         mViewDataBinding = PopularFragmentBinding.inflate(inflater, container, false).apply {
             mViewModel = obtainViewModel()
         }
-
         return mViewDataBinding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        mViewDataBinding.mViewModel?.start()
-        setupMovies()
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        showProgressDialog(true)
-
-        showProgressDialog(false)
+        mViewDataBinding.mViewModel?.start(recyclerViewMain)
     }
 
     private fun obtainViewModel(): PopularViewModel = MoviesExt.obtainViewModel(this,PopularViewModel::class.java) as PopularViewModel
-
-    /**
-     * Do setup movie list to recyclerview after getting data from API
-     */
-    private fun setupMovies() {
-        val mViewModel = mViewDataBinding.mViewModel
-
-        if (mViewModel != null) {
-
-            val layoutManager = LinearLayoutManager(activity)
-            layoutManager.orientation = LinearLayoutManager.HORIZONTAL
-
-            mAdapter = PopularAdapter(mViewModel.movieList, mViewModel, context)
-
-            with(recyclerViewMain) {
-                adapter = mAdapter
-                setLayoutManager(layoutManager)
-            }
-        }
-    }
 
     companion object {
 

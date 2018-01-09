@@ -81,16 +81,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dp"
-            android:fontFamily="@font/roboto_light"
-            android:text="No Movies Found"
-            android:textColor="@color/colorWhite"
-            app:visibility="@{mViewModel.errorTextVisibility}" />
-
         <ProgressBar
             android:layout_width="@dimen/dimen_50dp"
             android:layout_height="@dimen/dimen_50dp"

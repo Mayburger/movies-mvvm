@@ -1,7 +1,6 @@
 package com.nacoda.moviesmvvm.mvvm.detail.casts
 
 import android.content.Context
-import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -9,7 +8,7 @@ import android.view.ViewGroup
 import com.nacoda.moviesmvvm.R
 import com.nacoda.moviesmvvm.data.model.Casts
 import com.nacoda.moviesmvvm.databinding.CastsMoviesItemBinding
-import com.nacoda.moviesmvvm.util.helper.Network
+import com.nacoda.moviesmvvm.util.helper.Statics.IMAGE_URL
 
 /**
  * Created by irfanirawansukirman on 04/12/17.
@@ -48,7 +47,7 @@ class CastsAdapter(private var mCasts: Casts, private var mCastsViewModel: Casts
         fun bindItem(casts: Casts.Cast) {
 
             mCastsItemBinding.casts = casts
-            mCastsItemBinding.profilePath = Network.IMAGE_URL + casts.profile_path
+            mCastsItemBinding.profilePath = IMAGE_URL + casts.profile_path
             mCastsItemBinding.character = "as " + casts.character
             mCastsItemBinding.executePendingBindings()
 

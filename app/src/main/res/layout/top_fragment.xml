@@ -20,8 +20,6 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerViewMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="LinearLayoutManager"
-            app:topList="@{mViewModel.movieList}" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

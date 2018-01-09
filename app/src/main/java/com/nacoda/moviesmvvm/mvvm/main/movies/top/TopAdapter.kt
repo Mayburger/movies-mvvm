@@ -11,8 +11,8 @@ import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.databinding.MainMoviesItemBinding
 import com.nacoda.moviesmvvm.mvvm.detail.DetailActivity
 import com.nacoda.moviesmvvm.mvvm.main.MainItemUserActionListener
-import com.nacoda.moviesmvvm.util.helper.Network.IMAGE_URL
-import com.nacoda.moviesmvvm.util.helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Statics.IMAGE_URL
 
 /**
  * Created by irfanirawansukirman on 04/12/17.
@@ -34,6 +34,7 @@ class TopAdapter(private var mMovies: List<Movie>, private var mTopViewModel: To
             override fun onMovieClicked(movie: Movie) {
                 val intent = Intent(mContext, DetailActivity::class.java)
                 intent.putExtra(mContext!!.getString(R.string.detail_intent), movie)
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 mContext!!.startActivity(intent)
             }
         }

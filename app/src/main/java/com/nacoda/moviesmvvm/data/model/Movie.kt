@@ -21,5 +21,5 @@ data class Movie(
         var isAdult: Boolean = false,
         var overview: String? = null,
         var release_date: String? = null,
-        var genre_ids: Array<String>
+        var genre_ids: ArrayList<String>?
 ):Serializable

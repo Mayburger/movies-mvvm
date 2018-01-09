@@ -1,5 +1,6 @@
 package com.nacoda.moviesmvvm.mvvm.main.search
 
+import android.databinding.ObservableInt
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +14,8 @@ import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.nacoda.moviesmvvm.mvvm.main.MainMoviesActivity
 import com.nacoda.moviesmvvm.util.MoviesExt
-import com.nacoda.moviesmvvm.util.helper.hideProgress
-import com.nacoda.moviesmvvm.util.helper.onSearchStarted
+import com.nacoda.moviesmvvm.util.helper.Helper.hideProgress
+import com.nacoda.moviesmvvm.util.helper.Helper.onSearchStarted
 
 
 class SearchFragment : BaseFragment() {
@@ -33,6 +34,10 @@ class SearchFragment : BaseFragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        mViewDataBinding.mViewModel!!.progressVisibility = ObservableInt()
+        mViewDataBinding.mViewModel!!.recyclerVisibility = ObservableInt()
+        mViewDataBinding.mViewModel!!.errorTextVisibility = ObservableInt()
 
         YoYo.with(Techniques.SlideInUp)
                 .duration(300)

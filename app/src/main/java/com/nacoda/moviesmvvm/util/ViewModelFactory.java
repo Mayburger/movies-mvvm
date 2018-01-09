@@ -38,17 +38,17 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
         Intrinsics.checkParameterIsNotNull(modelClass, "modelClass");
         AndroidViewModel androidViewModel;
         if (modelClass.isAssignableFrom(PopularViewModel.class)) {
-            androidViewModel = (AndroidViewModel) (new PopularViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new PopularViewModel(this.mApplication, this.mMoviesRepository));
         } else if (modelClass.isAssignableFrom(TopViewModel.class)) {
-            androidViewModel = (AndroidViewModel) (new TopViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new TopViewModel(this.mApplication, this.mMoviesRepository));
         } else if (modelClass.isAssignableFrom(SearchViewModel.class)) {
-            androidViewModel = (AndroidViewModel) (new SearchViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new SearchViewModel(this.mApplication, this.mMoviesRepository));
         } else if (modelClass.isAssignableFrom(DetailViewModel.class)) {
-            androidViewModel = (AndroidViewModel) (new DetailViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new DetailViewModel(this.mApplication, this.mMoviesRepository));
         } else if (modelClass.isAssignableFrom(InfoViewModel.class)) {
-            androidViewModel = (AndroidViewModel) (new InfoViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new InfoViewModel(this.mApplication, this.mMoviesRepository));
         } else {
-            androidViewModel = (AndroidViewModel) (new CastsViewModel(this.mApplication, this.mMoviesRepository));
+            androidViewModel = (new CastsViewModel(this.mApplication, this.mMoviesRepository));
         }
         return (ViewModel) androidViewModel;
     }

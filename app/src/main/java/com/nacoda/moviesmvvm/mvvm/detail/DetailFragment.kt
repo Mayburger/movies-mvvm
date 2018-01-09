@@ -14,8 +14,8 @@ import com.nacoda.moviesmvvm.databinding.DetailFragmentBinding
 import com.nacoda.moviesmvvm.mvvm.detail.casts.CastsFragment
 import com.nacoda.moviesmvvm.mvvm.detail.info.InfoFragment
 import com.nacoda.moviesmvvm.util.MoviesExt
-import com.nacoda.moviesmvvm.util.helper.Network
-import com.nacoda.moviesmvvm.util.helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Statics.IMAGE_URL
 import kotlinx.android.synthetic.main.detail_fragment.*
 import java.text.DateFormatSymbols
 import java.text.SimpleDateFormat
@@ -39,8 +39,8 @@ class DetailFragment @SuppressLint("ValidFragment") constructor
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         mViewDataBinding.mMovie = mMovie
-        mViewDataBinding.backdropPath = Network.IMAGE_URL + mMovie.backdrop_path
-        mViewDataBinding.posterPath = Network.IMAGE_URL + mMovie.poster_path
+        mViewDataBinding.backdropPath = IMAGE_URL + mMovie.backdrop_path
+        mViewDataBinding.posterPath = IMAGE_URL + mMovie.poster_path
         mViewDataBinding.genres = getGenres(mMovie.genre_ids)
         val date = SimpleDateFormat("mm dd, yyyy").format(SimpleDateFormat("yyyy-mm-dd").parse(mMovie.release_date))
         mViewDataBinding.releaseYear = DateFormatSymbols().months[date.substring(0, 2).toInt() - 1] + (" ") + date.substring(3, date.length)

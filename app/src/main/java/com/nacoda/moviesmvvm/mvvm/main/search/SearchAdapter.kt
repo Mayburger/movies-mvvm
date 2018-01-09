@@ -6,20 +6,19 @@ import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.bumptech.glide.load.engine.bitmap_recycle.IntegerArrayAdapter
 import com.nacoda.moviesmvvm.R
 import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.databinding.SearchMoviesItemBinding
 import com.nacoda.moviesmvvm.mvvm.detail.DetailActivity
 import com.nacoda.moviesmvvm.mvvm.main.MainItemUserActionListener
-import com.nacoda.moviesmvvm.util.helper.Network.IMAGE_URL
-import com.nacoda.moviesmvvm.util.helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Helper.getGenres
+import com.nacoda.moviesmvvm.util.helper.Statics.IMAGE_URL
 
 /**
  * Created by irfanirawansukirman on 04/12/17.
  */
 
-class SearchAdapter(private var mMovies: List<Movie>?, private var mSearchViewModel: SearchViewModel,var mContext: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class SearchAdapter(private var mMovies: List<Movie>?, private var mSearchViewModel: SearchViewModel, var mContext: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerView.ViewHolder {
         val mMainItemBinding: SearchMoviesItemBinding = DataBindingUtil.inflate(LayoutInflater.from(parent?.context),
