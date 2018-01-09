@@ -36,6 +36,7 @@ public class TopViewModel extends AndroidViewModel {
         moviesRepository.getTopRated(new MoviesDataSource.GetMoviesCallback() {
             @Override
             public void onMoviesLoaded(List<Movie> movies) {
+                Toast.makeText(application, movies.get(0).getTitle(), Toast.LENGTH_LONG).show();
                 recyclerView.setAdapter(new TopAdapter(movies, new TopViewModel(application, moviesRepository), application));
                 LinearLayoutManager layoutManager = new LinearLayoutManager(application);
                 layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);

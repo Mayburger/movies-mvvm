@@ -37,6 +37,7 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
     public ViewModel create(@NotNull Class modelClass) {
         Intrinsics.checkParameterIsNotNull(modelClass, "modelClass");
         AndroidViewModel androidViewModel;
+
         if (modelClass.isAssignableFrom(PopularViewModel.class)) {
             androidViewModel = (new PopularViewModel(this.mApplication, this.mMoviesRepository));
         } else if (modelClass.isAssignableFrom(TopViewModel.class)) {
