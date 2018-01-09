@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View.OnClickListener" />
+
+        <variable
+            name="userActionListener"
+            type="com.nacoda.moviesmvvm.mvvm.main.MainItemUserActionListener" />
+
+        <variable
+            name="item"
+            type="com.nacoda.moviesmvvm.data.model.Movie" />
+
+        <variable
+            name="genres"
+            type="String" />
+
+        <variable
+            name="poster_path"
+            type="String" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> userActionListener.onMovieClicked(item)}"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/list_movies_main_poster_card"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            app:cardCornerRadius="@dimen/dimen_6dp"
+            app:cardElevation="@dimen/dimen_8dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorImagePlaceholder"
+                bind:loadPoster="@{poster_path}" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:ellipsize="end"
+            android:ems="8"
+            android:fontFamily="@font/comfortaa_bold"
+            android:maxLines="1"
+            android:text="@{item.title}"
+            android:textColor="@color/dove_black"
+            android:textSize="@dimen/text_18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:ellipsize="end"
+            android:ems="8"
+            android:fontFamily="@font/comfortaa_light"
+            android:maxLines="1"
+            android:text="@{genres}"
+            android:textSize="@dimen/text_14sp" />
+
+
+    </LinearLayout>
+</layout>
