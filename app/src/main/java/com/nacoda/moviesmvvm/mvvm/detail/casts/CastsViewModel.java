@@ -11,7 +11,6 @@ import com.nacoda.moviesmvvm.data.model.Casts;
 import com.nacoda.moviesmvvm.data.model.Movie;
 import com.nacoda.moviesmvvm.data.source.MoviesDataSource;
 import com.nacoda.moviesmvvm.data.source.MoviesRepository;
-import com.nacoda.moviesmvvm.util.helper.Helper;
 
 import static com.nacoda.moviesmvvm.util.helper.Helper.hideProgress;
 import static com.nacoda.moviesmvvm.util.helper.Helper.showProgress;

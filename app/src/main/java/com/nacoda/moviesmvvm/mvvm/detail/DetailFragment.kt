@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import com.nacoda.moviesmvvm.R
 import com.nacoda.moviesmvvm.base.BaseFragment
 import com.nacoda.moviesmvvm.data.model.Movie
-import com.nacoda.moviesmvvm.databinding.CastsFragmentBinding
 import com.nacoda.moviesmvvm.databinding.DetailFragmentBinding
 import com.nacoda.moviesmvvm.mvvm.detail.casts.CastsFragment
 import com.nacoda.moviesmvvm.mvvm.detail.info.InfoFragment

@@ -1,5 +1,6 @@
 package com.nacoda.moviesmvvm.mvvm.main.search;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.databinding.ObservableInt;
@@ -23,6 +24,7 @@ import static com.nacoda.moviesmvvm.util.helper.Helper.showProgress;
 public class SearchViewModel extends AndroidViewModel {
 
     private MoviesRepository moviesRepository;
+    @SuppressLint("StaticFieldLeak")
     private Application application;
 
     public ObservableInt progressVisibility;

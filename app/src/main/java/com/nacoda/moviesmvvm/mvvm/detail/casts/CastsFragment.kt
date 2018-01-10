@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.nacoda.moviesmvvm.base.BaseFragment
 import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.databinding.CastsFragmentBinding
-import com.nacoda.moviesmvvm.databinding.InfoFragmentBinding
 import com.nacoda.moviesmvvm.util.MoviesExt
 import kotlinx.android.synthetic.main.casts_fragment.*
 

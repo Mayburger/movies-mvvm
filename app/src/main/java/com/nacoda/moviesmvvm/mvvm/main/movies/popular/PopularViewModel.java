@@ -2,13 +2,9 @@ package com.nacoda.moviesmvvm.mvvm.main.movies.popular;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
-import android.content.Context;
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableList;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.LinearLayout;
 
 import com.nacoda.moviesmvvm.data.model.Movie;
 import com.nacoda.moviesmvvm.data.source.MoviesDataSource;

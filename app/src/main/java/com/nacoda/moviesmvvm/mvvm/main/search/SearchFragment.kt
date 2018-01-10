@@ -5,17 +5,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.nacoda.moviesmvvm.base.BaseFragment
 import com.nacoda.moviesmvvm.databinding.SearchFragmentBinding
-import kotlinx.android.synthetic.main.search_fragment.*
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
+import com.nacoda.moviesmvvm.base.BaseFragment
 import com.nacoda.moviesmvvm.mvvm.main.MainMoviesActivity
 import com.nacoda.moviesmvvm.util.MoviesExt
 import com.nacoda.moviesmvvm.util.helper.Helper.hideProgress
 import com.nacoda.moviesmvvm.util.helper.Helper.onSearchStarted
+import kotlinx.android.synthetic.main.search_fragment.*
 
 
 class SearchFragment : BaseFragment() {
@@ -59,14 +59,6 @@ class SearchFragment : BaseFragment() {
             }
             false
         })
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        showProgressDialog(true)
-
-        showProgressDialog(false)
     }
 
 

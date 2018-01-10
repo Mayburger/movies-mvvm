@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import com.nacoda.moviesmvvm.base.BaseFragment
 import com.nacoda.moviesmvvm.databinding.InfoFragmentBinding
 import com.nacoda.moviesmvvm.util.MoviesExt
-import com.nacoda.moviesmvvm.util.ViewModelFactory
 
 class InfoFragment : BaseFragment() {
 
