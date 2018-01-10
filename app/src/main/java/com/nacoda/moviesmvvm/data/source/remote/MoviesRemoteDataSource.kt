@@ -7,7 +7,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 object MoviesRemoteDataSource : MoviesDataSource {

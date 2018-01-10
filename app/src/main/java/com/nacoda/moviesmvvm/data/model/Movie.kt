@@ -4,7 +4,7 @@ import java.io.Serializable
 
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 data class Movie(

@@ -7,7 +7,7 @@ import com.nacoda.moviesmvvm.mvvm.main.movies.popular.PopularAdapter
 import com.nacoda.moviesmvvm.mvvm.main.movies.top.TopAdapter
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 object MainMoviesBindings {

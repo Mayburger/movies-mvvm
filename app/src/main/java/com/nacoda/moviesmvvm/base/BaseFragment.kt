@@ -8,7 +8,7 @@ import android.view.Window
 import com.nacoda.moviesmvvm.R
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 open class BaseFragment : Fragment() {

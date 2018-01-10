@@ -18,7 +18,7 @@ import com.nacoda.moviesmvvm.data.source.MoviesRepository
 import id.gits.jasaraharja.util.SingleLiveEvent
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 class CastsViewModel(context: Application, private val mMoviesRepository: MoviesRepository) : AndroidViewModel(context) {

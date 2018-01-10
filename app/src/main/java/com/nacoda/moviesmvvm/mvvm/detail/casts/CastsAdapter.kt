@@ -12,7 +12,7 @@ import com.nacoda.moviesmvvm.databinding.CastsMoviesItemBinding
 import com.nacoda.moviesmvvm.util.helper.Network
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 class CastsAdapter(private var mCasts: Casts, private var mCastsViewModel: CastsViewModel, var mContext: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

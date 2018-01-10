@@ -13,7 +13,7 @@ import com.nacoda.moviesmvvm.util.helper.hideProgress
 import com.nacoda.moviesmvvm.util.helper.showProgress
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 class SearchViewModel(context: Application, private val mMoviesRepository: MoviesRepository) : AndroidViewModel(context) {

@@ -6,7 +6,7 @@ import com.nacoda.moviesmvvm.data.model.Movie
 
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 open class MoviesRepository(val remoteDataSource: MoviesDataSource, val localDataSource: MoviesDataSource) : MoviesDataSource {
     override fun getCasts(callback: MoviesDataSource.GetCastsCallback, movieId: String) {

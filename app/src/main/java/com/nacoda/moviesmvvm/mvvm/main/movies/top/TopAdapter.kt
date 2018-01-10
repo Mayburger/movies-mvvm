@@ -15,7 +15,7 @@ import com.nacoda.moviesmvvm.util.helper.Network.IMAGE_URL
 import com.nacoda.moviesmvvm.util.helper.getGenres
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 class TopAdapter(private var mMovies: List<Movie>, private var mTopViewModel: TopViewModel,var mContext: Context?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

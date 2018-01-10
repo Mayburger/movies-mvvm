@@ -9,7 +9,7 @@ import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 abstract class ApiCallback<M>: Observer<M> {

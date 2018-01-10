@@ -6,7 +6,7 @@ import com.nacoda.moviesmvvm.data.source.MoviesDataSource
 import com.nacoda.moviesmvvm.util.helper.Preference
 
 /**
- * Created by irfanirawansukirman on 04/12/17.
+ * Created by Mayburger on 04/12/17.
  */
 
 class MoviesLocalDataSource private constructor(private val preferences: SharedPreferences) : MoviesDataSource {
