@@ -18,13 +18,9 @@ import com.nacoda.moviesmvvm.data.model.Movie
 import com.nacoda.moviesmvvm.util.MoviesExt.replaceFragmentInActivity
 
 
-class MainMoviesActivity : BaseActivity(), MainItemUserActionListener {
+class MainMoviesActivity : BaseActivity() {
 
     private lateinit var mToolbar: Toolbar
-
-    override fun onMovieClicked(movie: Movie) {
-        Toast.makeText(applicationContext, movie.original_title, Toast.LENGTH_SHORT).show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

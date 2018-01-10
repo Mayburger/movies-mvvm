@@ -3,25 +3,18 @@ package com.nacoda.moviesmvvm.mvvm.main.movies.popular;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.provider.SyncStateContract;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.nacoda.moviesmvvm.R;
-import com.nacoda.moviesmvvm.data.model.Casts;
 import com.nacoda.moviesmvvm.data.model.Movie;
 import com.nacoda.moviesmvvm.databinding.MainMoviesItemBinding;
 import com.nacoda.moviesmvvm.mvvm.detail.DetailActivity;
-import com.nacoda.moviesmvvm.mvvm.detail.casts.CastsViewModel;
 import com.nacoda.moviesmvvm.mvvm.main.MainItemUserActionListener;
 import com.nacoda.moviesmvvm.util.helper.Helper;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.List;
-
-import kotlin.jvm.internal.Intrinsics;
 
 import static com.nacoda.moviesmvvm.util.helper.Statics.IMAGE_URL;
 

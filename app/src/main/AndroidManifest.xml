@@ -21,9 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".mvvm.detail.DetailActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".mvvm.detail.DetailActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"
